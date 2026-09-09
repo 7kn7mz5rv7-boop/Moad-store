@@ -271,7 +271,7 @@ export default function BottleTracker() {
         };
       });
     } else {
-      list = items.map((it) =>
+      list = items.map((it): Item =>
         it.id === activeTop.id && it.type === "product"
           ? updater(it)
           : it
