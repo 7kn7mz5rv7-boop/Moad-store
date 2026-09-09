@@ -166,8 +166,8 @@ export default function BottleTracker() {
 
     if (!name) return;
 
-    const newProduct = newProductObj(name);
-
+    const newProduct = { ...newProductObj(name), type: "product" as const };
+    
     const list = items.map((it) => {
       if (it.id !== activeTopId || it.type !== "folder") {
         return it;
