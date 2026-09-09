@@ -23,7 +23,7 @@ type Product = {
   name: string;
   count: number;
   log: LogEntry[];
-  type?: "product";
+  type: "product";
 }
 type Item =
   | (Product & { type: "product" })
