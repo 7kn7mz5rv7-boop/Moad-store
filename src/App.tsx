@@ -55,8 +55,8 @@ function newProductObj(name: string): Product {
     id: uid(),
     name,
     count: 0,
-    log: [],
-  };
+    log: [], 
+    type: "product"};
 }
 
 export default function BottleTracker() {
